@@ -11,7 +11,9 @@ import sq_c2_ex2.Parrot;
 public class ConfigClass {
     @Bean
     Cat cat(){
-        return new Cat();
+        Cat cat = new Cat();
+        cat.setSay("Hello");
+        return cat;
     }
 }
 

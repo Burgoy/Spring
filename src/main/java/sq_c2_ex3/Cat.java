@@ -4,8 +4,12 @@ import org.springframework.stereotype.Component;
 
 
 public class Cat {
-    private final String say = "Mew";
-    public synchronized String getSay() {
+    private String say = "Mew";
+    public String getSay() {
         return say;
+    }
+
+    public void setSay(String say) {
+        this.say = say;
     }
 }
