@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
         var context =
                 new AnnotationConfigApplicationContext(
-                        ConfigParrot.class
+                        ConfigProject.class,
+                        StringIntegerConfig.class
                 );
         Parrot parrot = new Parrot();
         Parrot p = context.getBean(Parrot.class);
 
         System.out.println(p.getName());
-
 
     }
 }
