@@ -7,7 +7,7 @@ public class Main {
         var context =
                 new AnnotationConfigApplicationContext(ConfigClass.class);
 
-        Parrot p = context.getBean("Petux",Parrot.class);
+        Parrot p = context.getBean(Parrot.class);
 
         System.out.println(p.getName());
 
