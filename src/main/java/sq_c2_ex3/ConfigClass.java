@@ -9,6 +9,9 @@ import sq_c2_ex2.Parrot;
 @Configuration
 @ComponentScan(basePackages = "sq_c2_ex3")
 public class ConfigClass {
-
+    @Bean
+    Cat cat(){
+        return new Cat();
+    }
 }
 
