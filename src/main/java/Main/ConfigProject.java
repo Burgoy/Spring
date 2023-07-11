@@ -21,6 +21,7 @@ public class ConfigProject {
 
     @Bean
     Integer nextInt(){
+        System.out.println("Print Int");
         return  new Scanner(System.in).nextInt();
     }
 }
