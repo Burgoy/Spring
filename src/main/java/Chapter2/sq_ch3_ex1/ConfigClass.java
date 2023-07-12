@@ -24,8 +24,16 @@ public class ConfigClass {
     @Primary
     Women Natalia(){
         Women women = new Women();
-        women.setCat(CatVasiliy());
+        women.setCat(CatVasiliy()/*Link to Cat*/);
         women.getCat().setName("Vasiliy");
+        return women;
+    }
+
+    @Bean
+    Women Alex(Parrot parrot){
+        Women women = new Women();
+        women.setParrot(parrot);
+        women.getParrot().setName("Bird");
         return women;
     }
 }

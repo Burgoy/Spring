@@ -1,7 +1,7 @@
 package Chapter2.sq_ch3_ex1;
 
 public class Human {
-    private String name;
+    private String name = "Alex";
     private Cat cat;
     private Parrot parrot;
 

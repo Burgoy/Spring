@@ -26,6 +26,7 @@ public class Main {
         Parrot parrot1 = main.TestContext.getBean(Parrot.class);
         Human Jac = main.TestContext.getBean(Human.class);
         Women Natalia = main.TestContext.getBean("Natalia", Women.class);
+        Women Alex = main.TestContext.getBean("Alex", Women.class);
 
         marysa.setName("Marysa");
         System.out.println(Jac);
@@ -36,6 +37,7 @@ public class Main {
 
         System.out.println("Human Jac has a parrot " + Jac.getParrot().getName());
         System.out.println("Woman Natalia has a cat " + Natalia.getCat().getName());
+        System.out.println("Woman Alex has a parrot " + Alex.getParrot().getName());
 
 
     }
