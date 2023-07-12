@@ -14,17 +14,28 @@ public class Main {
         human.setName("Jac");
         Supplier<Human> Jac = ()-> human;
         TestContext.registerBean("Jac", Human.class, Jac, bd -> {bd.setPrimary(true);});
+
+        human.setParrot(TestContext.getBean(Parrot.class));
     }
 
     public static void main(String[] args) {
-        Cat marysa = new Main().TestContext.getBean(Cat.class);
-        Parrot parrot1 = new Main().TestContext.getBean(Parrot.class);
-        Human Jac = new Main().TestContext.getBean(Human.class);
+
+        Main main = new Main();
+
+        Cat marysa = main.TestContext.getBean(Cat.class);
+        Parrot parrot1 = main.TestContext.getBean(Parrot.class);
+        Human Jac = main.TestContext.getBean(Human.class);
+        Women Natalia = main.TestContext.getBean("Natalia", Women.class);
 
         marysa.setName("Marysa");
-        System.out.println(Jac.toString());
-        System.out.println(parrot1.toString());
-        System.out.println(marysa.toString());
+        System.out.println(Jac);
+        System.out.println(parrot1);
+        System.out.println(marysa);
+
+        //Establishing communication "has a":
+
+        System.out.println("Human Jac has a parrot " + Jac.getParrot().getName());
+        System.out.println("Woman Natalia has a cat " + Natalia.getCat().getName());
 
 
     }
