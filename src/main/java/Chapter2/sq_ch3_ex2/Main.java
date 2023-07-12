@@ -12,8 +12,7 @@ public class Main {
         Human human = m.context.getBean(Human.class);
         Cat cat = m.context.getBean(Cat.class);
 
-        System.out.println(human.getName());
-        System.out.println(human.getCat());
+        System.out.println(human.getName() +" "+human.getCat());
 
     }
 }

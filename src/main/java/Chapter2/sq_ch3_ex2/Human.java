@@ -8,12 +8,14 @@ import java.util.Scanner;
 @Component
 public class Human {
     private final String Name = "Elena";
+    private final Cat cat;
+    private final Parrot parrot;
 
     @Autowired
-    private Cat cat;
-
-    @Autowired
-    private Parrot parrot;
+    public Human(Cat cat, Parrot parrot) {
+        this.cat = cat;
+        this.parrot = parrot;
+    }
 
     public String getName() {
         return Name;
@@ -23,16 +25,8 @@ public class Human {
         return cat;
     }
 
-    public void setCat(Cat cat) {
-        this.cat = cat;
-    }
-
     public Parrot getParrot() {
         return parrot;
-    }
-
-    public void setParrot(Parrot parrot) {
-        this.parrot = parrot;
     }
 }
 
