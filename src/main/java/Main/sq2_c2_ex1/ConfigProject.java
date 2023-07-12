@@ -1,4 +1,4 @@
-package Main;
+package Main.sq2_c2_ex1;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

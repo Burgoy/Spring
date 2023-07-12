@@ -1,4 +1,4 @@
-package sq_c2_ex4;
+package Main.sq_c2_ex4;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

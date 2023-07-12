@@ -1,10 +1,7 @@
-package sq_c2_ex3;
+package Main.sq2_c2_ex1;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Parrot {
-    private String name = "Default name";
+    private String name;
 
     public String getName() {
         return name;

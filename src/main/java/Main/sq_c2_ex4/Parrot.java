@@ -1,4 +1,4 @@
-package Main;
+package Main.sq_c2_ex4;
 
 public class Parrot {
     private String name;
