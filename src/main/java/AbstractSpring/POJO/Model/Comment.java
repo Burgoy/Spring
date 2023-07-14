@@ -1,4 +1,4 @@
-package AbstractSpring.Repositories;
+package AbstractSpring.POJO.Model;
 
 public class Comment {
     private String author;

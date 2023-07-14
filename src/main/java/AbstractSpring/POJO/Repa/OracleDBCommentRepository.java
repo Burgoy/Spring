@@ -1,6 +1,6 @@
-package AbstractSpring.Repa;
+package AbstractSpring.POJO.Repa;
 
-import AbstractSpring.Model.Comment;
+import AbstractSpring.POJO.Model.Comment;
 
 public class OracleDBCommentRepository implements CommentRepository{
     @Override
